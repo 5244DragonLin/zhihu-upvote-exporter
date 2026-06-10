@@ -84,7 +84,7 @@ output/
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/你的用户名/zhihu-upvote-exporter.git
+git clone https://github.com/5244DragonLin/zhihu-upvote-exporter.git
 cd zhihu-upvote-exporter
 ```
 
