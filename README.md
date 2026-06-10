@@ -79,7 +79,7 @@ output/
 ![图片](https://pic.zhimg.com/xxx.jpg) 和 [链接](url) ...
 ```
 
-## 快速开始
+##  🚀快速开始
 
 ### 1. 克隆项目
 
@@ -91,7 +91,7 @@ cd zhihu-upvote-exporter
 ### 2. 安装依赖
 
 ```bash
-pip install requests playwright
+pip install -r requirements.txt
 playwright install chromium
 ```
 
@@ -116,7 +116,7 @@ python zhihu_upvote_exporter.py https://www.zhihu.com/people/xxx --no-incrementa
 
 首次运行会在终端提示登录方式（扫码 / 粘贴 Cookie），登录一次后 Cookie 可复用。
 
-## CLI 模式
+##  ⌨️CLI 模式
 
 ```
 python zhihu_upvote_exporter.py [用户主页URL] [选项]
@@ -165,7 +165,7 @@ d_c0=xxx
 _zap=xxx
 ```
 
-## 项目结构
+## 📂项目结构
 
 ```
 zhihu-upvote-exporter/
@@ -175,7 +175,7 @@ zhihu-upvote-exporter/
 └── .gitignore
 ```
 
-## 配置说明
+## ⚙️配置说明
 
 脚本顶部 `默认配置` 区域可调整以下参数：
 
@@ -186,7 +186,7 @@ zhihu-upvote-exporter/
 | `RETRY_DELAY` | 被限流时重试等待秒数 | `5` |
 | `MAX_RETRIES` | 单页最大重试次数 | `3` |
 
-## FAQ
+## ❓️FAQ
 
 **会不会封号？**
 
@@ -208,11 +208,11 @@ zhihu-upvote-exporter/
 
 完全支持。核心依赖 `requests` 和 `playwright` 均为跨平台库。
 
-## 贡献
+## 🤝贡献
 
 欢迎提 Issue 和 PR。
 
-## 许可证
+## 📃许可证
 
 [MIT License](LICENSE) — 随便用，标注来源即可。
 *（内容由AI生成，仅供参考）*
