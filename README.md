@@ -210,7 +210,25 @@ zhihu-upvote-exporter/
 
 ## 🤝贡献
 
-欢迎提 Issue 和 PR。
+欢迎提 Issue 和 PR！以下是一些潜在的改进方向，供有兴趣贡献的同学参考：
+
+### 已知问题 / 待改进点
+
+- **文件名冲突问题**：当前以 `日期_标题` 作为文件名，若同一天有两个同名标题的内容，第二个会跳过。建议文件名加上 `answer_id` / `article_id` 后缀去重。
+- **图片未下载**：Markdown / HTML 中的图片仅保留知乎图床链接，若内容被删或图床失效则无法访问。建议新增 `--download-images` 参数，将图片下载到本地 `assets/images/` 目录并替换链接。
+- **无进度条**：抓取大量点赞时终端只有文字输出，缺少直观的进度展示。建议引入 `tqdm` 库添加进度条。
+- **缺少配置文件支持**：每次运行都需在命令行输入参数，不够便捷。建议新增 `--config` 参数，支持从 YAML / JSON 配置文件读取 Cookie、输出目录、格式等配置。
+- **同步请求性能瓶颈**：当前使用 `requests` 同步串行抓取，速度受限。建议迁移至 `aiohttp` 异步并发，在可控并发数下显著提升抓取速度。
+
+### 贡献流程
+
+1. Fork 本仓库
+2. 创建分支：`git checkout -b feature/your-feature`
+3. 提交修改：`git commit -m "描述本次改动"`
+4. 推送分支：`git push origin feature/your-feature`
+5. 提交 Pull Request
+
+有任何疑问欢迎提 Issue 讨论 😊
 
 ## 📃许可证
 
