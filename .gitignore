@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Output directories (抓取结果)
+知乎用户_*/
+豆瓣用户_*/
+
+# Playwright
+playwright-report/
+test-results/
+
+# Environment / secrets
+.env
+*.auth_state.json
