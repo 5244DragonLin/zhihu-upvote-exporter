@@ -11,7 +11,7 @@
 
 **Zhihu Upvote Exporter 解决这些问题**：输入用户主页链接，自动爬取所有点赞回答和文章，每条内容保存为一个格式优美的 Markdown 或 HTML 文件。
 
-## 亮点
+## ⭐亮点
 
 - 点赞内容导出：导出用户点赞过的回答和文章，而非自己创作的内容
 - 双格式输出：Markdown 纯文本 + HTML 富文本（保留原始排版、图片、样式），可同时导出
@@ -339,6 +339,14 @@ output/
 - Markdown 和 HTML 双格式输出
 - 增量爬取机制，基于 `.progress.json` 断点续爬
 - Playwright 自动扫码登录
+
+## ☕捐赠
+
+如果你觉得本项目帮助了你，请作者喝一杯咖啡，你的支持是作者最大的动力。本项目会持续更新。
+
+| 支付宝 | 微信 |
+|--------|------|
+| ![支付宝](https://gitee.com/yhl5244/images/raw/master/donate_alipay.jpg) | ![微信](https://gitee.com/yhl5244/images/raw/master/donate_wechat.jpg) |
 
 ## 📃许可证
 
