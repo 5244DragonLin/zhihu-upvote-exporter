@@ -1,0 +1,22 @@
+{
+  "_comment": "知乎点赞导出工具 - 示例配置文件（JSON）",
+  "_usage": "python zhihu_upvote_exporter.py --config config.example.json",
+
+  "user_url": "https://www.zhihu.com/people/xxx",
+
+  "cookie": "",
+  "cookie_file": "",
+
+  "output": "output",
+  "format": "both",
+  "limit": null,
+
+  "download_images": true,
+  "image_host": "gitee",
+  "gitee_token": "your_gitee_personal_access_token",
+  "gitee_repo": "your_username/your_repo",
+  "gitee_branch": "master",
+  "gitee_path_prefix": "zhihu-images",
+
+  "concurrency": 5
+}

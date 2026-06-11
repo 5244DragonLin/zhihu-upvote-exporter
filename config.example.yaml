@@ -1,0 +1,33 @@
+# ============================================================
+# 知乎点赞导出工具 - 示例配置文件
+# 用法：python zhihu_upvote_exporter.py --config config.yaml
+# ============================================================
+
+# ---- 必填 ----
+# user_url: "https://www.zhihu.com/people/xxx"
+
+# ---- 登录 ----
+# cookie: "your_cookie_string"
+# cookie_file: "cookie.txt"
+
+# ---- 输出 ----
+output: "output"
+format: "both"    # md / html / both
+# limit: 50       # 限制抓取条数
+
+# ---- 图片下载（本地模式）----
+# download_images: true
+# image_host: local            # local 或 gitee
+
+# ---- 图片下载（Gitee 图床模式）----
+download_images: true
+image_host: gitee
+gitee_token: "your_gitee_personal_access_token"
+gitee_repo: "your_username/your_repo"
+gitee_branch: "master"
+# gitee_path_prefix: "zhihu-images"  # 可选，仓库内的子目录
+
+# ---- 抓取 ----
+# no_incremental: true
+# no_scan: true
+concurrency: 5
